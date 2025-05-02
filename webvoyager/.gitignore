@@ -1,0 +1,8 @@
+*.log
+downloads/*.pdf
+results/2024*
+test_code.py
+__pycache__
+.env
+results
+data/oh_deepseek-v3/workspaces
