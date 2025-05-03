@@ -96,7 +96,7 @@ if __name__ == "__main__":
     parser.add_argument("--in_dir", default="downloads/OpenAILike/Qwen2.5-Coder-32B-Instruct", help="Path to the input directory")
     parser.add_argument("--prefix", default="00", help="Prefix for the app directories")
     args = parser.parse_args()
-    in_dir = args.in_dir
+    in_dir = os.path.join(args.in_dir, "extracted")
     prefix = args.prefix
     print(get_grade(in_dir, prefix))
     

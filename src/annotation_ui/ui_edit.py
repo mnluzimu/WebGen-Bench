@@ -80,11 +80,11 @@ class JSONLEditor:
                 self.current_index = len(self.records) - 1
             return
 
-        # Get the URL to see if this record was previously saved
-        url = self.records[self.current_index].get("url", "")
-        if url in self.saved_records:
+        # Get the id to see if this record was previously saved
+        id = self.records[self.current_index].get("id", "")
+        if id in self.saved_records:
             # Use the previously saved data instead of the original
-            self.current_record = self.saved_records[url].copy()
+            self.current_record = self.saved_records[id].copy()
         else:
             # Otherwise, start with the record from input.jsonl
             self.current_record = self.records[self.current_index].copy()
@@ -170,9 +170,9 @@ class JSONLEditor:
         self.current_record["ui_instruct"] = ui_instruct
 
         # Save in-memory
-        url = self.current_record.get("url", "")
-        if url:
-            self.saved_records[url] = self.current_record.copy()
+        id = self.current_record.get("id", "")
+        if id:
+            self.saved_records[id] = self.current_record.copy()
 
         # Update status label (no message box)
         self.update_status_label()
@@ -237,9 +237,9 @@ def main():
             for line in f:
                 try:
                     existing = json.loads(line)
-                    url = existing.get("url")
-                    if url:
-                        saved_records[url] = existing
+                    id = existing.get("id")
+                    if id:
+                        saved_records[id] = existing
                 except json.JSONDecodeError:
                     # If there's a malformed line, skip it
                     continue

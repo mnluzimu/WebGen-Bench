@@ -317,7 +317,7 @@ def run_single_task(task: Dict[str, Any], args_dict: Dict[str, Any]):
     logging.info("########## TASK%s ##########", task["id"])
 
     # Per‑process OpenAI client
-    client = OpenAI(api_key=args.api_key, base_url="http://14.103.16.83:25822/v1")
+    client = OpenAI(api_key=args.api_key, base_url="http://PI_ADDRESS:PORT/v1")
 
     options = driver_config(args)
     driver_task = webdriver.Chrome(options=options)

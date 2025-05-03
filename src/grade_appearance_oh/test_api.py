@@ -5,8 +5,8 @@ from prompt import appearance_prompt
 
 
 client = OpenAI(
-    api_key="sk-mah6FUel7jrB3lNj8c3cnqUGeKy1ovL5DAD1GFge92C7Fe864c8646B1B9DaB6C20a10A896",  
-    base_url="https://platform.llmprovider.ai/v1"
+    api_key="API_KEY",  
+    base_url="https://BASE_URL/v1"
 )
 
 def encode_image(image_path):
