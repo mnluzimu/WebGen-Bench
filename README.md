@@ -2,7 +2,7 @@
 
 The dataset is also at 🤗 [luzimu/WebGen-Bench](https://huggingface.co/datasets/luzimu/WebGen-Bench) and on [WebGen-Bench (Kaggle)](https://www.kaggle.com/datasets/zimulu/webgen-bench). But for the running of this repo, you do not need to download the data from these sources, as the data is already placed under the `data` directory.
 
-(The code under `src` was executed on a Windows 11 system. It should also run on Linux with minor adjustments. The code under `src-remote` was executed on a Linux server. This README often uses `deepseek/deepseek-chat-v3-0324:free` as an example. You can replace it with other files.)
+(The code under `src` was executed on a Windows 11 system. It should also run on Linux with minor adjustments. The code under `src-remote` was executed on a Linux server. This README often uses `deepseek/deepseek-chat-v3-0324:free` as an example. You can replace it with other models.)
 
 The experiment outputs are placed under `outputs.zip`. It includes the output of the LLM-based agents that were tested in the paper. 
 
