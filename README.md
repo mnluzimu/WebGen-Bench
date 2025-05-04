@@ -141,6 +141,14 @@ cd OpenHands-WebGen-Fork
 python src/test_webgen-bench/test_webgen_bench.py
 ```
 
+### Testing Aider
+
+You can test Aider using our forked repo [Aider-WebGen-Fork](https://github.com/YunqiaoYang/Aider-WebGen-Fork). You should configure it based on [Aider README](https://github.com/YunqiaoYang/Aider-WebGen-Fork/blob/main/README.md), then run:
+
+```shell
+cd .\working_dirs
+python ..\src\batch_generate.py
+```
 
 ## Training WebGen-LM
 
