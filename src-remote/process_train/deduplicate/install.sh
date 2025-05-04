@@ -1,8 +1,0 @@
-pip install sentence-transformers scikit-learn
-
-
-python /mnt/cache/luzimu/code_agent/APP-Bench-Remote/src/process_train/deduplicate/test_decontamination_semantic.py --test_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/app-bench.jsonl --train_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/inter_deduplicated/freelancer_proginn_decontaminated_ngram5.jsonl --sim_threshold 0.55 --output_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/inter_deduplicated/freelancer_proginn_decontaminated_ngram5_remove-semantic.jsonl --contaminated_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/inter_deduplicated/freelancer_proginn_decontaminated_ngram5_remove-semantic_contaminated.jsonl
-
-python /mnt/cache/luzimu/code_agent/APP-Bench-Remote/src/process_train/deduplicate/test_decontamination_semantic.py --test_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/app-bench.jsonl --train_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/app-bench_train.jsonl --sim_threshold 0.55 --output_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/app-bench_train_remove-semantic.jsonl --contaminated_file /mnt/cache/luzimu/code_agent/APP-Bench-Remote/data/train/app-bench_train_remove-semantic_contaminated.jsonl
-
-python src-remote/process_train/deduplicate/print_semantic.py  --test_file data/test.jsonl --train_file data/train.jsonl --sim_threshold 0 --top_k 3
