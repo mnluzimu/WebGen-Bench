@@ -1,5 +1,7 @@
 # WebGen-Bench
 
+This repository contains the code for reproducing the paper [WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch](https://arxiv.org/abs/2505.03733).
+
 The dataset is also at 🤗 [luzimu/WebGen-Bench](https://huggingface.co/datasets/luzimu/WebGen-Bench) and on [WebGen-Bench (Kaggle)](https://www.kaggle.com/datasets/zimulu/webgen-bench). But for the running of this repo, you do not need to download the data from these sources, as the data is already placed under the `data` directory.
 
 The **model weights** can be downloaded from:
@@ -271,3 +273,19 @@ python src\automatic_bolt_diy\eval_bolt_diy.py ^
 ```
 
 Everything after is similar to [Testing Bolt.diy](#test-bolt).
+
+## Citation
+
+If you find our project useful, please cite:
+
+```
+@misc{lu2025webgenbenchevaluatingllmsgenerating,
+      title={WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch}, 
+      author={Zimu Lu and Yunqiao Yang and Houxing Ren and Haotian Hou and Han Xiao and Ke Wang and Weikang Shi and Aojun Zhou and Mingjie Zhan and Hongsheng Li},
+      year={2025},
+      eprint={2505.03733},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.03733}, 
+}
+```
