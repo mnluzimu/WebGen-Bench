@@ -4,7 +4,7 @@ This repository contains the code for reproducing the paper [WebGen-Bench: Evalu
 
 The dataset is also at 🤗 [luzimu/WebGen-Bench](https://huggingface.co/datasets/luzimu/WebGen-Bench) and on [WebGen-Bench (Kaggle)](https://www.kaggle.com/datasets/zimulu/webgen-bench). But for the running of this repo, you do not need to download the data from these sources, as the data is already placed under the `data` directory.
 
-|Data | Links |
+|Data | HF Links |
 |---|---|
 |WebGen-Bench | 🤗 [luzimu/WebGen-Bench](https://huggingface.co/datasets/luzimu/WebGen-Bench) |
 |WebGen-Bench_train_data | 🤗 [luzimu/WebGen-Bench_train_data](https://huggingface.co/datasets/luzimu/WebGen-Bench_train_data) |
