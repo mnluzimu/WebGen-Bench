@@ -23,6 +23,16 @@ The experiment outputs are placed under `outputs.zip`. It includes the output of
 
 If you wish to deploy Qwen2.5-VL-32B-Instruct yourself for UI agent testing, or you wish to reproduce the training of WebGen-LM, you can download the necessary models using `src-remote\download\download.py`.
 
+## Related Works
+
+- **WebGen-Agent**: An advanced website generation agent that autonomously creates websites from natural language instructions. It iteratively generates website codebases and refines them using visual and functional feedback, including screenshot-based VLM feedback and GUI-agent feedback.  
+  GitHub: [mnluzimu/WebGen-Agent](https://github.com/mnluzimu/WebGen-Agent)  
+  Paper: [WebGen-Agent: Enhancing Interactive Website Generation with Multi-Level Feedback and Step-Level Reinforcement Learning](https://arxiv.org/abs/2509.22644)
+
+- **FullStack-Agent**: A unified agent system for full-stack web development, consisting of FullStack-Dev, FullStack-Learn, and FullStack-Bench. It targets production-level full-stack website generation by evaluating and improving frontend, backend, and database functionalities.  
+  GitHub: [mnluzimu/FullStack-Agent](https://github.com/mnluzimu/FullStack-Agent)  
+  Paper: [FullStack-Agent: Enhancing Agentic Full-Stack Web Coding via Development-Oriented Testing and Repository Back-Translation](https://arxiv.org/abs/2602.03798)
+
 ## Testing Proprietary and Open-Source Models
 
 ### Installation
